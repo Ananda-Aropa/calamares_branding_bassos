@@ -1,4 +1,4 @@
-Source: calamares-settings-blissos
+Source: calamares-settings-bassos
 Section: utils
 Priority: optional
 Maintainer: Bùi Gia Viện <shadichy@blisslabs.org>
@@ -9,15 +9,15 @@ Homepage: https://github.com/BlissOS/calamares_branding_blissos
 Vcs-Git: https://github.com/BlissOS/calamares_branding_blissos
 Vcs-Browser: https://github.com/BlissOS/calamares_branding_blissos
 
-Package: calamares-settings-blissos
+Package: calamares-settings-bassos
 Architecture: all
 Depends: calamares
          ${misc:Depends}
 Provides: calamares-settings
-Description: BlissOS theme and settings for the Calamares Installer
+Description: BassOS theme and settings for the Calamares Installer
  Calamares is a generic installer framework for Linux distributions.
  By default, it contains a set of boilerplate wording and images. This
- package provides the latest BlissOS artwork as well as scripts that
+ package provides the latest BassOS artwork as well as scripts that
  supports EFI installations.
  .
  It also serves as an example for how derivatives can create their own

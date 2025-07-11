@@ -7,7 +7,7 @@ Copyright: 2016-2024, Jonathan Carter <jcc@debian.org>
            2025, Bùi Gia Viện <shadichy@blisslabs.org>
 License: ISC
 
-Files: calamares/branding/blissos/*png
+Files: calamares/branding/bassos/*png
 Copyright: 2025 Bùi Gia Viện <shadichy@blisslabs.org>
 License: CC-BY-SA-3.0
 
@@ -16,7 +16,7 @@ Copyright: 2016-2023 Jonathan Carter <jcc@debian.org>,
            2016-2023 Bùi Gia Viện <shadichy@blisslabs.org>
 License: ISC
 
-Files: calamares/branding/blissos/show.qml
+Files: calamares/branding/bassos/show.qml
 Copyright: 2025 Bùi Gia Viện <shadichy@blisslabs.org>
 License: GPL-2+
  This program is free software; you can redistribute it
