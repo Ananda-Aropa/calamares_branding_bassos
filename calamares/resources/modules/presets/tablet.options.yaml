@@ -1,3 +1,8 @@
+- name: "Defaults"
+  description: "BASS_TABLETUI=1"
+  selected: true
+  hidden: true
+
 - name: "Logging & Debugging"
   subgroups:
     - name: No logging
@@ -237,19 +242,6 @@
           editable: true
           default: "1280x720"
 
-# - name: "Bootloader"
-#   distinct: true
-#   options:
-#     - name: "Use GNU GRUB bootloader"
-#       description: "androidboot.bootctrl_bootcfg=/boot/grub/android.cfg"
-#       selected: true
-#     - name: "Use rEFInd bootloader"
-#       description: "androidboot.bootctrl_bootcfg=/boot/efi/EFI/refind/android.conf"
-#     - name: "Manual configurations"
-#       description: "androidboot.bootctrl_bootcfg="
-#       editable: true
-#       default: "/ab.env.cfg"
-
 - name: "Recovery"
   options:
     - name: "ADB port"
@@ -283,7 +275,7 @@
     - name: "Disable Thermald"
       description: "THERMALD_DISABLE=1"
 
-- name: "Package Options"
+- name: "Packages & Apps"
   options:
     - name: "Enable Smart Dock by default"
       description: "SET_SMARTDOCK_DEFAULT=1"
@@ -389,7 +381,7 @@
       editable: true
       default: "3 "
 
-- name: "ADB Options"
+- name: "ADB"
   options:
     - name: "Set default ADB Debugging mode (0,1,2,3)"
       description: "FORCE_USE_ADB_CLIENT_MODE="
@@ -406,7 +398,7 @@
     - name: "Set logcat debug"
       description: "SET_LOGCAT_DEBUG=1"
 
-- name: "Power/Sleep Options"
+- name: "Power/Sleep"
   options:
     - name: "Set screen off timeout (int in milliseconds)"
       description: "SET_SCREEN_OFF_TIMEOUT="
@@ -439,7 +431,7 @@
     - name: "ignore HDMI display sleep"
       description: "IGNORE_HDMI_DISPLAY_SLEEP=true"
 
-- name: "Radios & Bluetooth Options"
+- name: "Radios & Bluetooth"
   options:
     - name: "Force Bluetooth Service (enable,disable)"
       description: "FORCE_BLUETOOTH_SERVICE="
@@ -448,29 +440,7 @@
     - name: "Force disable all radios."
       description: "FORCE_DISABLE_ALL_RADIOS=1"
 
-- name: "Desktop Mode Options"
-  subgroups:
-    - name: "Enable desktop mode on external displays (0,1)"
-      description: "FORCE_DESKTOP_ON_EXTERNAL="
-      editable: true
-      default: "0 "
-    - name: "Enable Desktop Windowing mode."
-      description: "BASSEDW="
-      editable: true
-      default: "true "
-    - name: "Desktop Modes"
-      distinct: true
-      options:
-        - name: "Desktop Mode 1"
-          description: "BASSDM="
-          editable: true
-          default: "true "
-        - name: "Desktop Mode 2"
-          description: "BASSDM2="
-          editable: true
-          default: "true "
-
-- name: "Navigation & Statusbar Options"
+- name: "Navigation & Statusbar"
   options:
     - name: "Force disable navigation bar (true,false)"
       description: "FORCE_DISABLE_NAVIGATION="
@@ -509,7 +479,7 @@
       editable: true
       default: "0 "
 
-- name: "Mouse and Input Options"
+- name: "Mouse and Input"
   options:
     - name: "Set right mouse as back"
       description: "SET_RMB=true"
@@ -542,14 +512,14 @@
     - name: "Set override per-display focus enabled (true/false)"
       description: "androidboot.per_display_focus_enabled=true"
 
-- name: "TimeZone Options"
+- name: "TimeZone"
   options:
     - name: "Set Timezone Location"
       description: "SET_TZ_LOCATION="
       editable: true
       default: "UTC "
 
-- name: "USB/CAM BUS Options"
+- name: "USB/CAM BUS"
   options:
     - name: "Set USB Bus port permissions for ports: 001/001,001/002,etc."
       description: "SET_USB_BUS_PORTS="
@@ -564,7 +534,7 @@
       editable: true
       default: "true "
 
-- name: "Customization Options"
+- name: "Customizations"
   options:
     - name: "Override Bootanimation"
       description: "ADDON_BOOTANIMATION=1"
@@ -574,13 +544,7 @@
       description: "BLISS_INPUT_PORTS_ADDON=1"
     - name: "Addon vendor init"
       description: "ADDON_BASSINIT=1"
-
-- name: "Lockdown/Admin Boot Modes"
-  distinct: true
-  options:
-    - name: "Lockdown Mode"
-      description: "androidboot.bliss.bootmode=lockdown"
-    - name: "Admin Mode"
-      description: "androidboot.bliss.bootmode=admin"
-      
-
+    - name: "Custom boot arguments"
+      description: ""
+      editable: true
+      default: "<custom args...>"
